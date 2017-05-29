@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='gwtflashmedia'>
+	<inherits name='com.google.gwt.user.User'/>
+	<inherits name='eu.ydp.gwtutil.YdpGwtUtil' />
+	
+	<replace-with class="eu.ydp.empiria.gwtflashmedia.client.audio.standard.StandardFlashSound">
+		<when-type-is class="eu.ydp.empiria.gwtflashmedia.client.FlashSound" />
+	</replace-with>
+	
+	<replace-with class="eu.ydp.empiria.gwtflashmedia.client.audio.standard.StandardFlashSoundInitializer">
+		<when-type-is class="eu.ydp.empiria.gwtflashmedia.client.FlashSoundInitializer" />
+	</replace-with>
+	
+	<replace-with class="eu.ydp.empiria.gwtflashmedia.client.video.standard.StandardFlashVideo">
+		<when-type-is class="eu.ydp.empiria.gwtflashmedia.client.FlashVideo" />
+	</replace-with>
+</module>
